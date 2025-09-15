@@ -28,9 +28,11 @@ sns.set_style('darkgrid')
 
 from zipfile import ZipFile
 
-# specifying the zip file name
+# specifying the zip file name 
+#### PTB-XL v 1.0.1
+file_name = "/content/drive/MyDrive/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.1.zip"
+#### PTB-XL v 1.0.3
 file_name = "/content/drive/MyDrive/ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3.zip"
-
 # opening the zip file in READ mode
 with ZipFile(file_name, 'r') as zip:
     # printing all the contents of the zip file
