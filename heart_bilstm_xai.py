@@ -1216,7 +1216,7 @@ import matplotlib.pyplot as plt
 torch.backends.cudnn.enabled = False
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-#model = ECG_LSTM(input_size=12, hidden_size=128, num_layers=2, num_classes=len(label_map)).to(device) # Keep model on device but don't set to eval yet
+#model = model = BiLSTMClassifier(num_classes=len(label_map))
 
 # ====== Build a small GPU background set (critical for speed/RAM) ======
 # Take 8-16 training samples as background; more = heavier
